@@ -3,6 +3,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 .kotlin
+.codemie/
+config/config-dev.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
