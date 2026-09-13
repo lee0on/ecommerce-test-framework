@@ -18,8 +18,7 @@ public class HomePage extends BasePage {
     }
 
     public void goToHome(){
-        String url = Config.get().baseUrl();
-        driver.get(url);
+        goTo("");
     }
 
     public void waitHomeVis(By Slider){
