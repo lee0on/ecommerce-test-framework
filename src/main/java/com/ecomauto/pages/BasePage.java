@@ -23,6 +23,12 @@ public abstract class BasePage {
         element.click();
     }
 
+    protected void click(By locator){
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        WebElement element = driver.findElement(locator);
+        element.click();
+    }
+
    protected void sendKeys(String xpath, String keys){
        WebElement element = driver.findElement(By.xpath(xpath));
        wait.until(ExpectedConditions.elementToBeClickable(element));
